@@ -33,17 +33,23 @@ public class Principal {
 		 */
 		// crear un Estudiante
 
-		/*
-		 * Estudiante estAnonimo = new Estudiante(123);
-		 * System.out.println(estAnonimo.toString()); Estudiante estudiante = new
-		 * Estudiante(111, "44556677G","Carlos", 'M', LocalDate.now(), 187, estAnonimo,
-		 * null);
-		 * 
-		 * System.out.println(estudiante.toString());
-		 * 
-		 * Profesor profe1 = new Profesor(); System.out.println(profe1);
-		 */
+		
+		Estudiante estAnonimo = new Estudiante(123);
+		 System.out.println(estAnonimo.toString()); 
+		Estudiante estudiante = new   Estudiante(111, "44556677G","javier", 'M', LocalDate.now(), 187, estAnonimo,
+		  null);
+		 Estudiante estudiante2 = new  Estudiante(111, "44556677t","rafael", 'M', LocalDate.now(), 187, estAnonimo,
+				  null);
+		 Estudiante estudiante3 = new Estudiante(111, "44556677h","Marco", 'M', LocalDate.now(), 187, estAnonimo,
+				  null);
+		 Estudiante [] listaEstudiante = new Estudiante [] {estAnonimo,estudiante,estudiante2,estudiante3};
+		  
+		  System.out.println(estudiante.toString());
+		  
+		  Profesor profe1 = new Profesor(); System.out.println(profe1);
+		 
 		Practicas practicas = new Practicas();
+		practicas.ordenaEstudiantes(listaEstudiante);
 		// new Practicas().muestraNumerosDe1A1000();
 		// practicas.muestraNumerosDe1A1000();
 		// practicas.muestraNumeros3(20, 25);

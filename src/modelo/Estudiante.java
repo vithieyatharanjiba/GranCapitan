@@ -2,7 +2,7 @@ package modelo;
 
 import java.time.LocalDate;
 
-public class Estudiante extends Persona {
+public class Estudiante extends Persona implements Comparable<Estudiante> {
 	private int codGrupo;
 
 	public Estudiante(int codGrupo) {
@@ -27,5 +27,14 @@ public class Estudiante extends Persona {
 	public void setCodGrupo(int codGrupo) {
 		this.codGrupo = codGrupo;
 	}
+
+
+
+
+	public int compareTo(Estudiante estudiante) {
+		return this.getNombre().compareTo(estudiante.getNombre());
+		
+	}
+
 
 }
